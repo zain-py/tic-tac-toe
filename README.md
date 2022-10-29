@@ -7,11 +7,12 @@ This is a companion project to a Real Python [tutorial](https://realpython.com/t
 
 ---
 
-## Game Engine Library
+## _Game Engine Library_
+
 
 The underlying game logic is encapsulated in a common library, which can be reused across multiple [game front ends](#game-front-ends) without duplicating the code.
 
-### Installing
+> ### Installing
 
 Before proceeding, make sure you've created a virtual environment, activated it, and installed the tic-tac-toe game engine library into it:
 
@@ -21,10 +22,15 @@ $ python -m venv venv/
 $ source venv/bin/activate
 (venv) $ python -m pip install library/
 ```
+_For windows command line virtual envirnment can be activated as follow:_
+
+```shell
+C:\Users>.\venv\Scripts\activate
+```
 
 This will let you test the game front ends provided by this project.
 
-### Packaging
+> ### Packaging
 
 One of the available game front ends relies on the library distributed as a Python wheel. Therefore, you must build and package the library accordingly:
 
@@ -36,7 +42,7 @@ $ mv tic_tac_toe-1.0.0-py3-none-any.whl frontends/browser/
 
 Note that you don't need a virtual environment for these commands to work, but running them in one is completely fine.
 
-## Game Front Ends
+## _Game Front Ends_
 
 There are a few game front ends implemented in separate packages for you to try out. Before running them, make sure you've followed the earlier steps just described. Now, change the directory to the game front ends parent folder:
 
@@ -44,7 +50,7 @@ There are a few game front ends implemented in separate packages for you to try 
 $ cd tic-tac-toe/frontends/
 ```
 
-### Browser Front End
+> ### Browser Front End
 
 Play tic-tac-toe in your web browser through PyScript:
 
@@ -58,7 +64,7 @@ Sample gameplay:
 
 ![](docs/browser.gif)
 
-### Console Front End
+> ### Console Front End
 
 Play tic-tac-toe in the terminal:
 
@@ -76,7 +82,7 @@ Sample gameplay:
 
 ![](docs/console.gif)
 
-### Window Front End
+> ### Window Front End
 
 Play tic-tac-toe against a minimax computer player in a GUI application built with Tkinter:
 
